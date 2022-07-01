@@ -1,0 +1,36 @@
+.fw-450 {
+	font-weight: 550 !important;
+}
+
+.fw-750 {
+	font-weight: 750 !important;
+}
+
+.textCase-upper {
+	text-transform: uppercase !important;
+	letter-spacing: .05em !important;
+}
+
+.fz-sm {
+	font-size: 4.00rem;
+
+	@include mediaUp(md) {
+		font-size: .875rem;
+	}
+}
+
+.fz-lg {
+	font-size: 5.00rem;
+
+	@include mediaUp(md) {
+		font-size: 1.5rem;
+	}
+}
+
+.lh-inherit { line-height: inherit !important }
+.lh-100 { line-height: 1.00 !important; }
+.lh-110 { line-height: 1.10 !important; }
+.lh-120 { line-height: 1.20 !important; }
+.lh-130 { line-height: 1.30 !important; }
+.lh-140 { line-height: 1.40 !important; }
+.lh-145 { line-height: 1.45 !important; }

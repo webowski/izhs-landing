@@ -1,0 +1,30 @@
+.Switch {
+	position: absolute;
+	bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	@include linkReset;
+	display: inline-flex;
+	align-items: center;
+	font-size: .875rem;
+}
+
+.Switch__icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-top: -1px;
+	margin-right: 0.5rem;
+	fill: currentColor;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Switch__icon svg {
+	width: .875rem;
+	height: .875rem;
+}
+
+.Switch:hover {
+	color: var(--voice);
+}

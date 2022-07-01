@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+	<meta charset="utf-8">
+	<title>{{title}}</title>
+	{{> head-includes}}
+</head>
+<body>
+
+	{{> header}}
+
+	<main class="Main">
+		{{> @partial-block }}
+	</main>
+
+	{{> pagination}}
+
+	{{> footer-includes}}
+</body>
+</html>

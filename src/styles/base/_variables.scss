@@ -1,0 +1,93 @@
+// Text
+// ---------------------
+$fontSans:                  'Roboto Flex', sans-serif;
+$fontMain:                  $fontSans;
+$rem:                       16px;
+
+
+// Colors
+// ---------------------
+// absolute colors
+$white:                     #ffffff;
+$black:                     #090909;
+$blue:                      #5337FF;
+$blueAlter:                 #1F75FE;
+$violet:                    #883FFF;
+$orange:                    #FF6700;
+		// $red:                       #db4815;
+		// $green:                     #55b43c;
+$gray:                      #6A6A6A;
+$grayLightest:              #f5f5f5;
+		// $grayDarkest:               #343b4c;
+		// $grayDark:                  #555559;
+
+// semantic colors
+$brand:                     $blueAlter;
+$voice:                     $blue;
+		// $success:                   $green;
+		// $danger:                    $red;
+$accent:                    $orange;
+$accentAlter:               $violet;
+$major:                     $black;
+$minor:                     $gray;
+		// $muted:                     #92929a;
+		// $disabled:                  $grayLight;
+$inverse:                   $white;
+$bg:                        $grayLightest;
+$border:                    $gray;
+
+
+// Shapes
+// ---------------------
+		// $radius:                    4px;
+
+
+// Breakpoints
+// ---------------------
+		$xs:    0;
+		$sm:    576px;
+		$md:    768px;
+		$lg:    992px;
+		$xl:    1200px;
+		$xxl:   1600px;
+
+		$breakpoints: (
+			xs: $xs,
+			sm: $sm,
+			md: $md,
+			lg: $lg,
+			xl: $xl,
+			xxl: $xxl,
+		);
+
+
+// Container
+// ---------------------
+$sidePadding:               3rem;
+$containerMax:              1128px;
+
+
+// Grid
+// ---------------------
+		$gridColumns:               24;
+		$gap:                       24px;
+		// $gap-xxs:                   8px;
+		// $gap-xs:                    12px;
+		// $gap-sm:                    20px;
+		// $gap-md:                    $gap;
+		// $gap-lg:                    48px;
+		// $gap-xl:                    60px;
+
+
+//  Spacing
+// ---------------------
+		$spacer:                    $rem;
+
+
+// Transition & Animation
+// ---------------------
+		$duration-sm:               .12s;
+		$duration:                  .2s;
+		$duration-lg:               .3s;
+		$duration-xl:               .6s;
+		$duration-xxl:              1s;

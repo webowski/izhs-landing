@@ -1,0 +1,15 @@
+.Picture,
+.Picture > img {
+	display: block;
+	width: max-content;
+}
+
+.Picture > img {
+	max-height: 100%;
+}
+
+.Picture.-hero {
+	height: clamp(500px, calc(100vh - 7.5rem), 631px);
+	margin-left: auto;
+	margin-right: auto;
+}

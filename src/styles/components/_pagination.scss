@@ -1,0 +1,50 @@
+.Pagination {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: var(--sidePadding);
+	visibility: visible;
+}
+
+.Pagination ul {
+	@include listReset;
+}
+
+.Pagination__item {
+	@include linkReset;
+	font-weight: 750;
+}
+
+.Pagination__item a {
+	text-decoration: none;
+	display: block;
+	padding-left: 27px;
+	position: relative;
+	color: transparent;
+	pointer-events: none;
+}
+
+.Pagination__item a:before {
+	@include pseudoBlock(1rem);
+	left: 0;
+	top: calc(50% - 9px);
+	padding: 2px;
+	background-clip: content-box;
+	background-color: var(--minor);
+	border: 1px solid transparent;
+	pointer-events: all;
+	border-radius: 1rem;
+}
+
+.Pagination__item a:hover:before {
+	border-color: var(--minor);
+}
+
+.Pagination__item.is-active a:before {
+	background-color: var(--voice);
+	border-color: var(--voice);
+}
+
+.Pagination__item.is-active a {
+	color: var(--voice);
+}

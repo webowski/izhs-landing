@@ -1,0 +1,41 @@
+.Header {
+	// --headerHeight: 60px;
+	// height: var(--headerHeight);
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+}
+
+.Header__grid {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.Header__logo {
+	@include linkReset;
+	display: block;
+	width: 54px;
+	flex-shrink: 0;
+
+	@include mediaUp(md) {
+		width: 108px;
+	}
+}
+
+.Header__logo svg {
+	display: block;
+	width: 100%;
+}
+
+.Header__buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .5rem;
+}

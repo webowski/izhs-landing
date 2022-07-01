@@ -1,0 +1,40 @@
+.Badge {
+	@include linkReset;
+	display: inline-flex;
+	padding: 4px 8px;
+	border-radius: 6px;
+	background-color: var(--accent);
+	color: var(--inverse);
+	font-size: .625rem;
+	line-height: 1.2;
+	font-weight: 750;
+	white-space: nowrap;
+	transition:
+		background-color $duration-sm,
+		color $duration-sm;
+
+	@include mediaUp(lg) {
+		padding: 6px 16px;
+		border-radius: 8px;
+		font-size: .875rem;
+		line-height: 1.42;
+	}
+}
+
+.Badge.-alter {
+	background-color: var(--accentAlter);
+	padding: 6px 16px;
+	font-size: .875rem;
+	line-height: 1.42;
+}
+
+.Badge.-headerButtons {
+	margin-right: 0.5rem;
+}
+
+.Badge.-soon {
+	position: absolute;
+	left: 124px;
+	top: -31px;
+	transform: rotate(-15deg);
+}
